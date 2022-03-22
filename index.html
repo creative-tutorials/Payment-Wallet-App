@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌀Payment Wallet App using JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome PRO CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="text">Create an account</div>
+            <div class="form">
+                <form action="#" autocomplete="off" id="form">
+                    <div class="alert">Form Validation can't be completed please fill all field</div>
+                    <div class="eInput">
+                        <input type="text" name="username" placeholder="Username" id="userInput">
+                    </div>
+                    <div class="eInput">
+                        <input type="password" name="password" placeholder="Password" id="passwrdInput">
+                    </div>
+                    <div class="submit">
+                        <button type="submit" class="login">Login</button>
+                    </div>        
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- * for transaction process -->
+    <div class="container">
+        <div class="content">
+            <div class="welcome">Hello user</div>
+            <div class="card">
+                <img src="image/credit-card.png" alt="image of card">
+            </div>
+            <div class="box">
+                <p class="txt">Latest Transaction</p>
+                <div class="c3">
+                    <div class="bbx">
+                        <div class="trc">
+                            <img src="image/search.png" alt="image on transaction">
+                        </div>
+                        <div class="right1">
+                            <p id="process">Figma Plugin</p>
+                            <p id="date">Mar 20, 2022</p>
+                        </div>
+                        <div class="right2">
+                            <p id="cash_paid">$10</p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="bbx">
+                        <div class="trc">
+                            <img src="image/search.png" alt="image on transaction">
+                        </div>
+                        <div class="right1">
+                            <p id="process">Figma Plugin</p>
+                            <p id="date">Mar 20, 2022</p>
+                        </div>
+                        <div class="right2">
+                            <p id="cash_paid">$10</p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="bbx">
+                        <div class="trc">
+                            <img src="image/search.png" alt="image on transaction">
+                        </div>
+                        <div class="right1">
+                            <p id="process">Figma Plugin</p>
+                            <p id="date">Mar 20, 2022</p>
+                        </div>
+                        <div class="right2">
+                            <p id="cash_paid">$10</p>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+            <div class="add">
+                <div class="btn" id="new_transaction"><i class="fa-solid fa-nfc"></i></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="app">
+        <div class="content">
+            <div class="text"><i class="fa-solid fa-circle-chevron-left" id="back"></i> Send</div>
+            <p id="max_min">Min $10 - Max unlimited</p>
+            <div class="c2">
+                <p>Amount</p>
+                <div class="input">
+                    <input type="text" placeholder="Amount" id="amount">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+                <div class="tabs">
+                    <div class="tab" id="d1">$10</div>
+                    <div class="tab" id="d2">$20</div>
+                    <div class="tab" id="d3">$30</div>
+                    <div class="tab" id="d4">$40</div>
+                </div>
+                <div class="send">
+                    <button id="send">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js" type="module"></script>
+    <!-- <script src="wallets.js" ty></script> -->
+</body>
+</html>

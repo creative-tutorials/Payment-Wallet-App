@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary: #817E9F;
+    --white: #fcfcfc;
+    --seconday: #141E27;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--primary);
+}
+.wrapper{
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 30px;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+}
+.wrapper .content .text{
+    font-weight: 600;
+    font-size: 1.4em;
+    color: var(--seconday);
+}
+.wrapper .content .form{
+    margin-top: 20px;
+}
+.wrapper .content .form form .alert{
+    /* padding: 20px; */
+    /* margin: 0 0 10px; */
+    border-radius: 5px;
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    text-align: center;
+    transform: scale(0);
+    transition: .2s ease;
+}
+.wrapper .content .form form .eInput input{
+    width: 100%;
+    height: 58px;
+    margin: 0 0 20px;
+    padding-left: 28px;
+    border: 2px solid #bfbfbf;
+    border-radius: 5px;
+    outline: none;
+}
+.wrapper .content .form form .eInput input:focus{
+    border: 2px solid #3c395a;
+    caret-color: #3c395a;
+}
+.wrapper .content .form form .submit button{
+    width: 100%;
+    height: 58px;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: #3c395a;
+    color: #FFF;
+    cursor: pointer;
+}
+.wrapper .content .form form .alert.active{
+    padding: 20px;
+    margin: 0 0 10px;
+    border-radius: 5px;
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    text-align: center;
+    transform: scale(1);
+}
+/* * on transaction card */
+.container{
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 30px;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+    display: none;
+}
+
+.container .content .welcome{
+    font-weight: 500;
+    font-size: 1.3em;
+}
+.container .content .card{
+    position: relative;
+    margin-top: 40px;
+}
+.container .content .card img{
+    width: 100%;
+    /* height: 96px; */
+    transform: rotate(-90deg);
+    object-fit: cover;
+    pointer-events: none;
+    user-select: none;
+    /* position: relative; */
+}
+.container .content .card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    /* object-fit: contain; */
+    /* height: 100%; */
+    /* background: red; */
+    /* z-index: ; */
+    background: url('image/credit-card.png');
+    background-size: contain;
+    transform: rotate(45deg);
+}
+.container .content .box{
+    margin-top: 80px;
+}
+.container .content .box .c3{
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    overflow: auto;
+}
+.container .content .box p.txt{
+    font-weight: 500;
+    font-size: 23px;
+}
+.container .content .box .bbx{
+    margin: 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    padding: 20px 20px;
+    border-radius: 8px;
+}
+.container .content .box .trc img{
+    width: 40px;
+    height: 40px;
+}
+.container .content .box .right1 #process{
+    font-weight: 500;
+    font-size: 1.1em;
+}
+.container .content .box .right1 #date{
+    font-weight: 500;
+    font-size: 15px;
+    color: #8b8b8b;
+}
+.container .content .box .right2 #cash_paid{
+    font-size: 1.3em;
+    font-weight: 500;
+    color: var(--primary);
+}
+.container{
+    position: relative;
+}
+.container .content .add{
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(136deg, #54457F, #B84A62);
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+}
+.container .content .add .btn{
+    color: var(--white);
+    font-size: 2em;
+    cursor: pointer;
+}
+.app{
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 30px;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+    display: none;
+}
+.app .content .text{
+    font-weight: 500;
+    font-size: 1.8em;
+}
+.app .content #max_min{
+    color: #8b8b8b;
+    font-weight: 500;
+    font-size: 15px;
+}
+.app .content .c2{
+    margin-top: 20px;
+}
+.app .content p{
+    font-weight: 500;
+    font-size: 18px;
+}
+.app .content .input{
+    position: relative;
+    margin-top: 10px;
+}
+.app .content .input input{
+    width: 100%;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: #ebebeb;
+    padding-left: 48px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.app .content .input i{
+    position: absolute;
+    left: 20px;
+    top: 21px;
+}
+.app .content .tabs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.app .content .tabs .tab{
+    padding: 10px 20px;
+    background: #ebebeb;
+    color: rgb(87, 87, 87);
+    font-weight: 500;
+    border-radius: 8px;
+    user-select: none;
+    cursor: pointer;
+}
+.app .content .send{
+    margin-top: 70px;
+}
+.app .content .send button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: var(--primary);
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 50px;
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.app .content .send button:hover{
+    background: #54457F;
+}
